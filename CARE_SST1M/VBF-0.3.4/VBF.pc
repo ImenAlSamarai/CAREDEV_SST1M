@@ -1,0 +1,11 @@
+prefix=/Users/ImenAlSamarai/CTA/GORCA_original/GORCA/CARE_SST1M/VBF-0.3.4/lib
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: cparamlib
+Description: VERITAS Bank File (VBF) library
+Requires: 
+Version: 0.3.4
+Libs: -L${libdir} -lVBF -lbz2 -lz 
+Cflags: -I${includedir}

@@ -36,7 +36,7 @@ def PlotPix(filename, name = None ):
     #data_patch = numpy.genfromtxt(filename, usecols=(4, 5, 6, 7), skip_header=3907, max_rows=433, unpack=True)
 
 
-    ax = fig.add_subplot(111, aspect='equal', title = name)
+    ax = fig.add_subplot(111, aspect='equal', title = '')
     ax.set_xlim([min(data_pix[1, :]) - 25, max(data_pix[1, :]) + 25])
     ax.set_ylim([min(data_pix[2, :]) - 25, max(data_pix[2, :]) + 25])
     for p in [patches.RegularPolygon((data_pix[1, i], data_pix[2, i]), 6, 13.4, fill=False, edgecolor="green")
